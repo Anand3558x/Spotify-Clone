@@ -1,0 +1,107 @@
+body{
+   
+    margin: 0;
+    background-color: black;
+    color :azure;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    overflow: auto; /* overflow is used in auto mode is used because when to stop scrolling extra items */
+    
+    
+}
+.main{
+    display: flex;
+    height: 100vh; /*  In height section we have set height as 100 % of view port so that it could occupy the spaace from top to bottom */
+
+
+}
+.sidebar{
+    background-color: yellow;
+    width: 340px;
+    border-radius: 3px; /* To give curve edges */
+    overflow: hidden; /* overflow is used in  hidden mode is used because when necesaary then and then only it will scroll*/
+
+}
+.main_part{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 3px; /* To give curve edges */
+   
+
+}
+.music_player{
+    background-color: black;
+    position: fixed; /* Whenever we scroll down out music player should not move so we used position as fixed*/
+    bottom: 0px; /* As we can see our music player is at the bottom so we used bottom condition from 0 px */
+    height:40px;
+    width: 100%;  /* To give full page width we used 100% */
+
+}
+a{ 
+    text-decoration: none; /*Text decoration with none is used to remove underlines*/
+    color: white;
+}
+.nav{
+    background-color: black;
+    border-radius: 3px;
+    display: flex; /*We Displayed as flex so to set all the itemas in one line*/
+    flex-direction: column; /*We Displayed flex-direction as column to set all the itemas in column format*/
+    justify-content: center; /*To vertically bring our content to center we used justify content as center mode*/
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-option{
+    line-height: 2.5rem; /*We used line heihjt here to give line spacing*/
+    opacity: 0.7;
+
+}
+.nav-option:hover{
+    line-height: 2.5rem;
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.options{
+    display: flex;
+    border-radius: 3px;
+    justify-content: space-between;  /*To give spacebetween the icons and keep the icons both in different direction we use spae between*/
+    align-items: center;  /*Even the items are placed at difeerent direction but they have dto place at center also */
+    padding: 0.5rem 0.75rem;
+
+}
+.lib-logos i{
+    height: 1.25rem;
+    width: 1.25rem;
+    opacity: 0.7;
+    font-size: 1.25rem;
+    margin-right: 5px;
+    
+
+}
+.lib-logos i:hover{
+    height: 1.25rem;
+    width: 1.25rem;
+    opacity: 1;
+    font-size: 1.25rem;
+}
+
+.library{
+    height: 100%;
+    background-color: black;
+    margin-top:0.5px;
+    
+}
+.lib-logos{
+    margin-right: 1rem;
+}
